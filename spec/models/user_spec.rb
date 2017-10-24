@@ -16,8 +16,14 @@ RSpec.describe User, type: :model do
     then "go to Sign In Page"
   end
 
-  
+  it 'returns User email adress'
 
+  it 'returns User name'
 
+  it ' ' 
+
+  end
+
+  end
 
 end
