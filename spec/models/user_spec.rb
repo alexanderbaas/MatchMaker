@@ -1,29 +1,40 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
-  it "has an admin attribute"
-
-  if "admin atrribute true"
-    then "redirect to Admin Showpage"
+  it 'has a valid factory' do
+    expect(FactoryGirl.create(:user)).to be_valid
   end
 
-  if "admin atrribute false"
-    then "redirect to Student Showpage"
+  it "has an admin attribute" do
+    expect(FactoryGirl.create(:user)).to have_attribute(:admin)
   end
 
-  if "User has not Signed In"
-    then "go to Sign In Page"
-  end
+  describe "User admin attribute true" do
+      let(:user) { FactoryGirl.create :user,
+          email: "aaa@user.com",
+          password: "abcd1234",
+          admin: true
+        }
 
-  it 'returns User email adress'
+      it "has admin attribute set to true" do
+        expect(user.admin).to eq true
+      end
+    end
 
-  it 'returns User name'
 
-  it ' ' 
-
-  end
-
-  end
-
+#if "admin atrribute true"
+#     then "redirect to Admin Showpage"
+#   end
+#
+#   if "admin atrribute false"
+#     then "redirect to Student Showpage"
+#   end
+#
+#   if "User has not Signed In"
+#     then "go to Sign In Page"
+#   end
+#
+#   it 'returns User email adress'
+#
+#   it 'returns User name'
 end
