@@ -11,3 +11,5 @@ class ApplicationController < ActionController::Base
     end
   end
 end
+# error: https://www.thoughtco.com/nameerror-uninitialized-2907928
+# https://github.com/bitmakerlabs/debugging-guide/wiki/Rails-error:-Routing-Error:-uninitialized-constant

@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :students, only:[:index, :show]
-    resources :admin
+    resources :admins
 
 end
