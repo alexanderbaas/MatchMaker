@@ -10,31 +10,16 @@ RSpec.describe User, type: :model do
   end
 
   describe "User admin attribute true" do
-      let(:user) { FactoryGirl.create :user,
-          email: "aaa@user.com",
-          password: "abcd1234",
-          admin: true
-        }
+    let(:user)
+      { FactoryGirl.create :user,
+        email: "aaa@user.com",
+        password: "abcd1234",
+        admin: true
+      }
 
       it "has admin attribute set to true" do
         expect(user.admin).to eq true
       end
     end
 
-
- if "admin atrribute true"
-#     then "redirect to Admin Showpage"
-#   end
-#
-#   if "admin atrribute false"
-#     then "redirect to Student Showpage"
-#   end
-#
-#   if "User has not Signed In"
-#     then "go to Sign In Page"
-#   end
-#
-#   it 'returns User email adress'
-#
-#   it 'returns User name'
 end
