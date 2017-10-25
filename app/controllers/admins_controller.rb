@@ -1,11 +1,10 @@
 class AdminsController < ApplicationController
 
   def index
-  @students = Student.all
+    @users = User.all.order(admin: :desc, name: :asc)
   end
   def show
-  # @admin = Admin.find(params[:id])
-  #  @student = Student.find(params[:id])
+    @users = User.all
   end
 
 end

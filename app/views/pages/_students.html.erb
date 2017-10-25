@@ -1,0 +1,14 @@
+<% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.admin ? "Admin" : "Student" %></td>
+      <td><%= button_to user.admin ? "demote" : "promote", user_path(user), method: :patch, :class => "btn btn-default"%></td>
+    </tr>
+  <% end %>
+
+
+
+
+  <script type="text/javascript">
+
+  </script>
