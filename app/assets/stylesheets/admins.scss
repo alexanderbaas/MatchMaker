@@ -1,3 +1,4 @@
+
 .users {
   background-color: white;
   padding: 10px;
@@ -16,5 +17,37 @@
   background-color: white;
   padding: 10px;
   border: black 3px solid;
-  margin: 10px;
+  margin: 5px;
+}
+#name {
+background-color: silver;
+padding: 3px;
+border: black 1px solid;
+margin: 1px;
+}
+
+#level {
+  background-color: lightblue;
+  padding: 3px;
+  border: black 1px solid;
+  margin: 1px;
+}
+
+.knop {
+
+}
+
+.all {
+  text-align: center;
+  color: lightblue;
+  text-shadow: -2px 0 grey, 0 2px brown, 2px 0 grey, 0 -2px brown;
+  padding-bottom: 10px;
+}
+
+.ground {
+  background-color: #fff2ed;
+}
+
+.height {
+  height: 200px;
 }

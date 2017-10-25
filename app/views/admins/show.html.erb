@@ -4,40 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>MatchMaker Admin</title>
 </head>
 <body>
 
   <div>
-        <h2>Welcome</h2>
+        <h2><%= "Welcome #{current_user.name}" %></h2>
+
     </div>
 
-  <div class="row">
-      <div class="users col col-lg-4">
-        <p>all users</p>
+  <div class="row ">
+      <div class="users col col-lg-4 ground">
+        <h3 class="all">All users</h3>
           <ul>
-
               <%= render "pages/students" %>
-
           </ul>
       </div>
 
-      <div class="couples col col-lg-6">
-        <div class="row">
-  <p>All couples of today</p>
-
-  
-
+      <div class="couples col col-lg-6 ground">
+        <div>
+          <h3 class="all height">All couples of today</h3>
         </div>
       </div>
-
-      <div class="generate col col-lg-12">
-        <button type="button" name="button" class="btn btn-success">Generate Couple</button>
-        <button type="button" name="button">placeholdername</button>
-        <button type="button" name="button">placeholdername</button>
-      </div>
-
   </div>
+
+<div class="row">
+      <div class="generate col col-lg-4 ground">
+        <button type="button" name="button" class="btn btn-success">Generate Couple</button>
+        <button type="button" name="button">placeholder</button>
+        <button type="button" name="button">placeholder</button>
+      </div>
+</div>
+
 
 </body>
 </html>
