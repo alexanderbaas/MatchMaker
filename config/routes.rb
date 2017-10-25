@@ -6,4 +6,12 @@ Rails.application.routes.draw do
   resources :students, only:[:index, :show]
     resources :admins
 
+  namespace :api do
+    resources :admins
+  end
+
+  namespace :api do
+    resources :students
+  end
+
 end
