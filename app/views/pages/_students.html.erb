@@ -1,13 +1,13 @@
 <div >
 <% @users.each do |user| %>
     <tr class="row">
-      <div class="col col-lg-3" id="name">
+      <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" id="name">
           <td ><%= user.name %></td>
       </div>
-          <div class="col col-lg-3" id="level">
+          <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3" id="level">
             <td ><%= user.admin ? "Admin" : "Student" %></td>
           </div>
-              <div class="col col-lg-4">
+              <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <td><%= button_to user.admin ? "demote" : "promote", user_path(user), method: :patch, :class => "btn btn-default knop"%></td>
                     </div>
     </tr>
