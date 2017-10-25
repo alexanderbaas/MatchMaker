@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   def update
     user = User.find(params[:id])
     user.update_attributes!(admin: !user.admin)
-    redirect_to students_path
+    redirect_to admin_path(current_user)
   end
 
   private
