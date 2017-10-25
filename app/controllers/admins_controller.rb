@@ -1,11 +1,11 @@
 class AdminsController < ApplicationController
+  before_action :authorize_admin
 
   def index
-  @students = Student.all
+    @users = User.all.order(admin: :desc, name: :asc)
   end
   def show
-  # @admin = Admin.find(params[:id])
-  #  @student = Student.find(params[:id])
+    @users = User.all
   end
 
 end

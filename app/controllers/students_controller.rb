@@ -1,9 +1,9 @@
 class StudentsController < ApplicationController
   def index
+    @users = User.all.order(admin: :desc, name: :asc)
   end
 
   def show
-
-
-  end
+    @users = User.all
+    end
 end
