@@ -3,6 +3,7 @@ RSpec.describe User, type: :model do
   it 'has a valid factory' do
     expect(FactoryGirl.create(:user)).to be_valid
   end
+
   it "has an admin attribute" do
     expect(FactoryGirl.create(:user)).to have_attribute(:admin)
   end
