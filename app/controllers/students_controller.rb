@@ -1,13 +1,14 @@
 class StudentsController < ApplicationController
+
   def index
-    @users = User.all.order(admin: :desc, name: :asc)
+    @users = User.all
   end
 
   def show
-    @users = User.all
-    end
+    @student = User.find(params[:id])
+    @students = User.all
 
-
-
-    
+    @match = User.match
+    @student1 = @match.shift
+  end
 end

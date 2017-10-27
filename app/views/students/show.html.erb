@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MatchMaker</title>
-</head>
-<body>
+
+
+
+
 
 <div class="row ground users">
       <div class="currentday col col-lg-6">
@@ -18,23 +13,24 @@
         <div class="row">
         <h4 class="all">Your Matches of previous days</h4>
       <div class="col col-lg-6">
-        <p>name</p>
+        <!-- <p>name</p>
           <p>name</p>
             <p>name</p>
               <p>name</p>
-                <p>name</p>
+                <p>name</p> -->
+                <% @match.length.times do |index| %>
+                <% index = index + 1 %> <br>
+                <%= index %> <%= @student1 %>  <%= @match.shuffle.first %>
+                <% end %>
+
       </div>
-      <div class="col col-lg-6">
-        <p>day</p>
-          <p>day</p>
+        <div class="col col-lg-6">
+          <!-- <p>day</p>
             <p>day</p>
               <p>day</p>
                 <p>day</p>
+                  <p>day</p> -->
+        </div>
       </div>
-
-      </div>
+    </div>
 </div>
-
-
-</body>
-</html>

@@ -1,5 +1,3 @@
-require 'faker'
-
 FactoryGirl.define do
   factory :user do
     name     { Faker::Name.first_name}
@@ -13,6 +11,5 @@ FactoryGirl.define do
     trait :student do
       student false
     end
-
   end
 end

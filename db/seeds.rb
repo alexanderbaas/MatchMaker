@@ -1,8 +1,12 @@
 User.delete_all
 
 
-aaa  =User.create!( email: "aaa@user.com", password: "abcd1234", name: "aaa", admin: false)
-bbb  =User.create!( email: "bbbk@user.com", password: "abcd1234", name: "bbb", admin: false)
-ccc  =User.create!( email: "ccc@user.com", password: "abcd1234", name: "ccc", admin: false)
-ddd  =User.create!( email: "ddd@user.com", password: "abcd1234", name: "ddd", admin: false)
-eee  =User.create!( email: "eee@user.com", password: "abcd1234", name: "eee", admin: true)
+hans  =User.create!( email: "hans@user.com", password: "abcd1234", name: "hans", admin: false)
+henk  =User.create!( email: "henk@user.com", password: "abcd1234", name: "henk", admin: false)
+harry  =User.create!( email: "harry@user.com", password: "abcd1234", name: "harry", admin: false)
+henry =User.create!( email: "henry@user.com", password: "abcd1234", name: "henry", admin: false)
+hidde  =User.create!( email: "hidde@user.com", password: "abcd1234", name: "hidde", admin: false)
+harm  =User.create!( email: "harm@user.com", password: "abcd1234", name: "harm", admin: false)
+hannah  =User.create!( email: "hannah@user.com", password: "abcd1234", name: "hannah", admin: false)
+hugo  =User.create!( email: "hugo@user.com", password: "abcd1234", name: "hugo", admin: true)
+arno  =User.create!( email: "arno@user.com", password: "abcd1234", name: "arno", admin: true)

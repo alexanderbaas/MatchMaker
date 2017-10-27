@@ -5,5 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
 
+  def self.match
+      @match = User.where(admin: false)
+      @match = @match.pluck(:name)
+  end
 
 end

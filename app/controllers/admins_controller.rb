@@ -8,4 +8,5 @@ class AdminsController < ApplicationController
     @users = User.all
   end
 
+
 end
